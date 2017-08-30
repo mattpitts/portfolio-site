@@ -112,7 +112,14 @@ body {
 	margin: 0;
 	padding: 0;
 }
+.divider {
+	height: 10vh;
+}
 
+.section-title {
+	font-size: 3em;
+	text-align: center;
+}
 .main-name-container {
 	display: flex;
 	flex-direction: row;
@@ -213,7 +220,7 @@ body {
 .project-screenshot {
 	width: 100%;
 	height: auto;
-	border-radius: 1%;
+	border-radius: 5%;
 }
 .project-division > p {
 	text-indent: 2em;

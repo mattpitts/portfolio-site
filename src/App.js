@@ -9,6 +9,7 @@ import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import Resume from './Components/Resume';
 import Footer from './Components/Footer';
+import Divider from './Components/Divider';
 
 class App extends Component {
   render() {
@@ -18,6 +19,14 @@ class App extends Component {
 		<BrowserRouter>
 			<div>
 				<Header/>
+				<Main/>
+				<Divider/>
+				<About/>
+				<Divider/>
+				<Projects/>
+				<Divider/>
+				<Contact/>
+				<Resume/>
 				<div className='main'>
 					<Route exact path="/" component={Main}></Route>
 					<Route path="/about" component={About}></Route>

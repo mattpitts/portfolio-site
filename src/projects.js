@@ -2,8 +2,8 @@ import knetic_logo from './images/knetic_logo.png';
 import knetic_screenshot from "./images/knetic-screenshot.png"
 import get_logo from './images/get-icon.png';
 import get_screenshot from './images/get-screenshot.png';
-import jello_logo from './images/jello.png';
-import jello_screenshot from './images/jello.png';
+import jello_logo from './images/jello-icon.png';
+import jello_screenshot from './images/jello-screenshot.png';
 
 
 const projects = [
