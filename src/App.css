@@ -1,24 +1,228 @@
-.App {
-  text-align: center;
+body {
+	background-color: #313438;
+	color: #C5C3C6;
+	font-size: 1.5em;
+	font-family: 'Encode Sans', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.header {
+	height: 10vh;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 5vh 0;
+	padding: 0;
+}
+.header-logo {
+	width: 200px;
+	height: auto;
+	grid-column: 1;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.header-title {
+	font-size: 4em;
+	margin: 0;
+	padding: 0;
+	color: #4C5C68;
+	grid-column: 2;
 }
 
-.App-intro {
-  font-size: large;
+.header-nav {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.header-nav > li {
+	margin: 30px 20px 30px 20px;
+	grid-column: 2;
+	color: #1985A1;
+	font-size: 1.7em;
+}
+
+.header-nav a {
+	text-decoration: none;
+	transition: color 0.5s ease;
+}
+
+.header-nav a:visited {
+	color: inherit;
+}
+
+.header-nav a:hover {
+	color: #DCDCDD;
+}
+
+
+.main {
+	/*background-color: #1985A1;*/
+	/*background: linear-gradient(#313438, #1985A1);*/
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	display: flex;
+}
+
+.main-main {
+	background: linear-gradient(135deg, #313438, #1985A1, #313438);
+	height: 40vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+@font-face {
+  font-family: 'NeueHansKendrick-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('NeueHansKendrick-Regular'),
+       url('./fonts/NeueHansKendrick-Regular.ttf') format('truetype')
+}
+
+.blue-gradient {
+	background: linear-gradient(135deg, #313438, #1985A1, #313438);
+	width: 100vw;
+	margin: 0;
+}
+
+.main-name {
+	font-size: 5em;
+	font-family: "NeueHansKendrick-Regular";
+	letter-spacing: .15em;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+.main-name-alt {
+	font-size: 5em;
+	font-family: "NeueHansKendrick-Regular";
+	letter-spacing: .15em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #8eaf97;
+	margin: 0;
+	padding: 0;
+}
+
+.main-name-container {
+	display: flex;
+	flex-direction: row;
+}
+.matt-container {
+	display: inline-flex;
+}
+.pitts-container {
+	display: inline-flex;
+}
+.footer {
+	/*background-color: #8e0000;*/
+	background: linear-gradient(90deg, #313438, #8e0000, #313438);
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	height: 5px;
+}
+
+.title-subtext > h3 {
+	margin: 0;
+	padding: 0;
+	font-family: "NeueHansKendrick-Regular";
+	letter-spacing: .1em;
+}
+
+
+.about {
+	background: linear-gradient(135deg, #313438, #1985A1, #313438);\
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 10% 30% 40% 20%;
+	margin: 0;
+	align-items: center;
+}
+
+.headshot {
+	width: 90%;
+	height: auto;
+	border-radius: 50%;
+	grid-column: 2;
+	margin: 5%;
+	/*clip-path: polygon(50% 0, 85% 18%, 90% 77%, 28% 88%, 15% 30%);*/
+	/*clip-path: polygon(31% 0, 74% 0, 80% 59%, 39% 74%, 19% 33%);*/
+	/*clip-path: polygon(25% 0%, 100% 0%, 83% 71%, 0 73%);*/
+	/*clip-path: polygon(25% 0%, 93% 0, 83% 71%, 21% 72%);*/
+}
+
+.about-bio {
+	text-indent: 2em;
+	grid-column: 3;
+	margin: 5vh 0 5vh 0;
+}
+
+.section-header {
+	font-family: "NeueHansKendrick-Regular";
+	text-align: center;
+	font-size: 2em;
+	margin: 0;
+}
+
+.projects {
+	width: 100vw;
+	min-height: 80vh;
+	margin: 0;
+	align-items: center;
+}
+.project-container {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+.project-name {
+	font-family: "NeueHansKendrick-Regular";
+	text-align: center;
+	font-size: 2em;
+	margin: 1em 0 1em 0;
+}
+
+.project-division {
+	width: 50%;
+	padding: 3%;
+}
+
+.project-details-container {
+	display: flex;
+	flex-flow: row;
+	margin: 0;
+}
+
+.project-icon {
+	float: left;
+	max-height: 15vh;
+	max-width: auto;
+	margin-right: 1em;
+}
+
+.project-screenshot {
+	width: 100%;
+	height: auto;
+	border-radius: 1%;
+}
+.project-division > p {
+	text-indent: 2em;
+	line-height: 1.7em;
+}
+
+.project-divider {
+	height: 5px;
+	width: 60vw;
+	background-color: #4C5C68;
+	margin: 20px;
 }
