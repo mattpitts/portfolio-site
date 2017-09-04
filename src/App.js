@@ -10,14 +10,20 @@ import Contact from './Components/Contact';
 import Resume from './Components/Resume';
 import Footer from './Components/Footer';
 import Divider from './Components/Divider';
+import Background from './Components/Background';
+import createBackground from './three-background';
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+		createBackground();
+	}
   render() {
     return (
       <div className="App">
-
-		<BrowserRouter>
+		<Background/>
 			<div>
+				<Divider/>
 				<Header/>
 				<Main/>
 				<Divider/>
@@ -26,16 +32,10 @@ class App extends Component {
 				<Projects/>
 				<Divider/>
 				<Contact/>
+				<Divider/>
 				<Resume/>
-				<div className='main'>
-					<Route exact path="/" component={Main}></Route>
-					<Route path="/about" component={About}></Route>
-					<Route path="/projects" component={Projects}></Route>
-					<Route path="/contact" component={Contact}></Route>
-					<Route path="/resume" component={Resume}></Route>
-				</div>
+				<Divider/>
 			</div>
-		</BrowserRouter>
       </div>
     );
   }

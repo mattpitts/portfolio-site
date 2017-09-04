@@ -1,11 +1,15 @@
 body {
-	background-color: #313438;
+	background-color: rgba(0,0,0,0);
 	color: #C5C3C6;
 	font-size: 1.5em;
 	font-family: 'Encode Sans', sans-serif;
+	width: 100vw;
+	overflow-x: hidden;
 }
-
-.header {
+.App {
+	z-index: 1;
+}
+/*.header {
 	height: 10vh;
 	display: flex;
 	flex-flow: row;
@@ -13,28 +17,33 @@ body {
 	align-items: center;
 	margin: 0 0 5vh 0;
 	padding: 0;
+}*/
+
+.header {
+	position: fixed;
+	top: 30px;
+	left: 30px;
 }
 .header-logo {
 	width: 200px;
 	height: auto;
-	grid-column: 1;
 }
 
-.header-title {
+/*.header-title {
 	font-size: 4em;
 	margin: 0;
 	padding: 0;
 	color: #4C5C68;
 	grid-column: 2;
-}
+}*/
 
-.header-nav {
+/*.header-nav {
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
 	margin: 0;
 	padding: 0;
-}
+}*/
 
 .header-nav > li {
 	margin: 30px 20px 30px 20px;
@@ -67,9 +76,8 @@ body {
 }
 
 .main-main {
-	background: linear-gradient(135deg, #313438, #1985A1, #313438);
 	height: 40vh;
-	width: 100vw;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -87,11 +95,7 @@ body {
        url('./fonts/NeueHansKendrick-Regular.ttf') format('truetype')
 }
 
-.blue-gradient {
-	background: linear-gradient(135deg, #313438, #1985A1, #313438);
-	width: 100vw;
-	margin: 0;
-}
+
 
 .main-name {
 	font-size: 5em;
@@ -112,8 +116,9 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
 .divider {
-	height: 10vh;
+	height: 30vh;
 }
 
 .section-title {
@@ -130,14 +135,13 @@ body {
 .pitts-container {
 	display: inline-flex;
 }
-.footer {
-	/*background-color: #8e0000;*/
+/*.footer {
 	background: linear-gradient(90deg, #313438, #8e0000, #313438);
 	position: fixed;
 	bottom: 0;
 	width: 100vw;
 	height: 5px;
-}
+}*/
 
 .title-subtext > h3 {
 	margin: 0;
@@ -148,11 +152,11 @@ body {
 
 
 .about {
-	background: linear-gradient(135deg, #313438, #1985A1, #313438);\
-	width: 100vw;
+	width: 100%;
 	display: grid;
 	grid-template-columns: 10% 30% 40% 20%;
 	margin: 0;
+	padding: 0;
 	align-items: center;
 }
 
@@ -161,11 +165,6 @@ body {
 	height: auto;
 	border-radius: 50%;
 	grid-column: 2;
-	margin: 5%;
-	/*clip-path: polygon(50% 0, 85% 18%, 90% 77%, 28% 88%, 15% 30%);*/
-	/*clip-path: polygon(31% 0, 74% 0, 80% 59%, 39% 74%, 19% 33%);*/
-	/*clip-path: polygon(25% 0%, 100% 0%, 83% 71%, 0 73%);*/
-	/*clip-path: polygon(25% 0%, 93% 0, 83% 71%, 21% 72%);*/
 }
 
 .about-bio {
@@ -182,12 +181,14 @@ body {
 }
 
 .projects {
-	width: 100vw;
-	min-height: 80vh;
+	width: 100%;
 	margin: 0;
+	padding: 0;
 	align-items: center;
 }
 .project-container {
+	padding: 0;
+	margin: 0;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -200,7 +201,7 @@ body {
 }
 
 .project-division {
-	width: 50%;
+	width: 47%;
 	padding: 3%;
 }
 
@@ -232,4 +233,31 @@ body {
 	width: 60vw;
 	background-color: #4C5C68;
 	margin: 20px;
+}
+
+.three-canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.blue-gradient {
+	background: linear-gradient(135deg, rgba(49, 52, 56, .3), rgba(25, 133, 161, .6), rgba(49, 52, 56, .5));
+	width: 100%;
+	margin: 0;
+}
+.resume {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.resume-container {
+	margin: 5vh 0 5vh 0;
+	background-color: white;
+	padding: 0;
+	width: 612px;
+	height: 792px;
+	align-self: center;
 }

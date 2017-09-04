@@ -2,10 +2,11 @@ import React from 'react';
 
 const Contact = () => {
 	return (
-		<div className="about">
-			<p>
-				Contact
-			</p>
+		<div className="contact blue-gradient">
+			<h6 className="section-header">Reach Out</h6>
+			<div>
+				
+			</div>
 		</div>
 	)
 }

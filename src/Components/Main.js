@@ -2,7 +2,7 @@ import React from 'react';
 
 const Main = () => {
 	return (
-		<div className="main-main">
+		<div className="main-main blue-gradient">
 			<div className="main-name-container">
 				<div className='matt-container'>
 					<h1 className="main-name">MA</h1>

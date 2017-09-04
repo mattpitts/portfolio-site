@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
 	return (
-		<div className="about">
+		<div className="about blue-gradient">
 			<img className="headshot" src={require('../images/headshot.jpg')}/>
 			<div className="about-bio">
 				<h6 className="section-header">About Me</h6>
