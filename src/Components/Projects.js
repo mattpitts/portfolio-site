@@ -8,6 +8,7 @@ const Projects = () => {
 			<h1 className='section-title'>Projects</h1>
 			{projects.map((project, i)=>
 					<Project
+						id={i}
 						key={i}
 						project={project}
 					/>
