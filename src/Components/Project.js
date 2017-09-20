@@ -8,6 +8,10 @@ const Project = (props) => {
 			<div className="project-division">
 				<img className="project-icon"src={props.project.iconUrl}/>
 				<p className="project-description">{props.project.description}</p>
+				<div className="project-links">
+					<a href={props.gitURL}>See the code</a>
+					<a href={props.deployedURL}>See it live</a>
+				</div>
 			</div>
 		)
 		right = (
@@ -25,6 +29,10 @@ const Project = (props) => {
 			<div className="project-division">
 				<img className="project-icon"src={props.project.iconUrl}/>
 				<p className="project-description">{props.project.description}</p>
+				<div className="project-links">
+					<a href={props.gitURL}>The code</a>
+					<a href={props.deployedURL}>The deployed site</a>
+				</div>
 			</div>
 		)
 	}

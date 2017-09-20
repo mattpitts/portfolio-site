@@ -11,6 +11,8 @@ const Projects = () => {
 						id={i}
 						key={i}
 						project={project}
+						gitURL={project.gitURL}
+						deployedURL={project.deployedURL}
 					/>
 			)}
 		</div>
