@@ -9,8 +9,8 @@ const Project = (props) => {
 				<img className="project-icon"src={props.project.iconUrl}/>
 				<p className="project-description">{props.project.description}</p>
 				<div className="project-links">
-					<a href={props.gitURL}>See the code</a>
-					<a href={props.deployedURL}>See it live</a>
+					<a href={props.gitURL}><i className="fa fa-github" aria-hidden="true"></i></a>
+					<a href={props.deployedURL}><i className="fa fa-globe" aria-hidden="true"></i></a>
 				</div>
 			</div>
 		)
@@ -30,8 +30,8 @@ const Project = (props) => {
 				<img className="project-icon"src={props.project.iconUrl}/>
 				<p className="project-description">{props.project.description}</p>
 				<div className="project-links">
-					<a href={props.gitURL}>The code</a>
-					<a href={props.deployedURL}>The deployed site</a>
+					<a href={props.gitURL}><i className="fa fa-github" aria-hidden="true"></i></a>
+					<a href={props.deployedURL}><i className="fa fa-globe" aria-hidden="true"></i></a>
 				</div>
 			</div>
 		)

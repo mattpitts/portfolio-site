@@ -299,6 +299,7 @@ body {
 	text-decoration: none;
 	color: #8eaf97;
 	cursor: pointer;
+	font-size: 3em;
 }
 .project-links a:hover {
 	color: white;
