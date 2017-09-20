@@ -261,3 +261,31 @@ body {
 	height: 792px;
 	align-self: center;
 }
+.icon-text-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	/*width: 30%;*/
+	margin-top: 3%;
+}
+.icon-text-container p {
+	margin: 0 0 0 1%;
+	width: 100%;
+}
+
+.icon-text-container a {
+	text-decoration: none;
+	color: #C5C3C6;
+	cursor: pointer;
+
+}
+.contact-container {
+	padding: 3vh;
+	height: 25vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
