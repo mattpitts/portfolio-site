@@ -5,7 +5,7 @@ const Resume = () => {
 		<div className="resume blue-gradient">
 			<h6 className="section-header">Resume</h6>
 			<div className="resume-container">
-				<img className="resume-image" src={require('../images/Pitts-Matt-Resume-8-31.png')}/>
+				<img className="resume-image" src={require('../images/resume-v2.png')}/>
 			</div>
 		</div>
 	)
